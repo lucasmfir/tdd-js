@@ -4,6 +4,8 @@
   "description": "TDD course",
   "main": "index.js",
   "scripts": {
+    "lint": "npx eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/lucasmfir/tdd-js/issues"
   },
-  "homepage": "https://github.com/lucasmfir/tdd-js#readme"
+  "homepage": "https://github.com/lucasmfir/tdd-js#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "husky": "^2.3.0"
+  }
 }
